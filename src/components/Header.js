@@ -1,6 +1,15 @@
+import {
+  NavLink
+} from 'react-router-dom';
 import logo from '../assets/planet.png';
 
-const Header = () => (
+const Header = () => {
+
+  let activeStyle = {
+    textDecoration: "underline",
+  };
+
+  return (
   <header>
     <nav>
       <div className="title-container">
@@ -8,13 +17,31 @@ const Header = () => (
         <h1 className="header-title">Space Travelers&apos; Hub</h1>
       </div>
       <ul className="list-container">
-        <li className="rockets-nav">Rockets</li>
-        <li>Missions</li>
-        <li className="my-profile-nav">My Profile</li>
+        <li>
+          <NavLink
+          to='/'
+          className="rockets-nav"
+          style={({ isActive }) =>
+          isActive ? activeStyle : undefined
+                }>Rockets</NavLink>
+        </li>
+        <li>
+          <NavLink 
+          to='missions'
+          style={({ isActive }) =>
+          isActive ? activeStyle : undefined
+                } >Missions</NavLink>
+        </li>
+        <li>
+          <NavLink to='myprofile'  className="my-profile-nav"
+          style={({ isActive }) =>
+          isActive ? activeStyle : undefined
+                }>My Profile</NavLink>
+        </li>
       </ul>
     </nav>
     <hr />
   </header>
-);
+)};
 
 export default Header;

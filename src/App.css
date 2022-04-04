@@ -26,6 +26,11 @@ nav {
   display: flex;
   list-style: none;
   gap: 1rem;
+
+}
+
+.list-container li a {
+  text-decoration: none;
 }
 
 .rockets-nav {
