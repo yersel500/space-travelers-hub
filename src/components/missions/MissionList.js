@@ -22,8 +22,9 @@ const MissionList = () => {
       </tr>
       {myState.map((element) => (
         <MissionItem
-          key={element.mission_id}
-          mission={element.mission_name}
+          key={element.MissionId}
+          id={element.MissionId}
+          mission={element.MissionName}
           description={element.description}
         />
       ))}
