@@ -1,32 +1,41 @@
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { getRockets, rocketsData } from '../../redux/rockets/RocketsReducer';
 import Rocket from './Rocket';
 
-const rocketData = [{
-  id: '1',
-  images: '',
-  name: 'Falcon 1',
-  description: 'Lorem Ipsum',
-},
-{
-  id: '2',
-  images: '',
-  name: 'Falcon 2',
-  description: 'Lorem Ipsum',
-},
-{
-  id: '3',
-  flickr_images: '',
-  name: 'Falcon 3',
-  description: 'Lorem Ipsum',
-},
-];
+const Rockets = () => {
+  const rocketStore = useSelector((state) => state.rocketsReducer);
+  const dispatch = useDispatch();
 
-const RocketsList = () => {
-  const rockets = rocketData.map((rocket) => (<Rocket data={rocket} key={rocket.rocket_id} />));
+  useEffect(() => {
+    async function fetchData() {
+      if (rocketStore.length === 0) {
+        const api = await getRockets();
+        dispatch(rocketsData(api));
+      }
+    }
+    fetchData();
+  }, []);
+
   return (
     <div>
-      {rockets}
+      {rocketStore.map((rocket) => (
+        <Rocket
+          name={rocket.name}
+          description={rocket.description}
+          key={rocket.id}
+          id={rocket.id}
+          image={rocket.image}
+        />
+      ))}
     </div>
   );
 };
+
+const RocketsList = () => (
+  <div>
+    <Rockets />
+  </div>
+);
 
 export default RocketsList;
