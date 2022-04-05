@@ -20,7 +20,12 @@ const Rocket = ({
       <img className="rocket-img" src={image} alt="Rocket" />
       <div>
         <h2 className="rocket-name">{name}</h2>
-        <p className="rocket-description">{description}</p>
+        <p className="rocket-description">
+          {reserved === true && (
+            <span className="rocket-span">Reserved</span>
+          )}
+          {description}
+        </p>
         {reserved === true && (
           <button className="rocket-cancel-btn" onClick={cancelReservation} type="button">Cancel Reservation</button>
         )}
