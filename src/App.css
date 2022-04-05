@@ -44,3 +44,29 @@ nav {
 hr {
   margin: 0 1.5rem;
 }
+
+.rocket-container {
+  display: flex;
+  margin: 2rem;
+}
+
+.rocket-img {
+  display: block;
+  width: 18rem;
+}
+
+.rocket-name,
+.rocket-description {
+  margin: 0 0 1rem 1rem;
+  font-family: sans-serif;
+}
+
+.rocket-btn {
+  margin-left: 1rem;
+  background-color: #0290ff;
+  color: #fff;
+  border: none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}

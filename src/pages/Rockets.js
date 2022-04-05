@@ -1,11 +1,9 @@
-import { useSelector } from 'react-redux';
+import RocketsList from '../components/rockets/RocketsList';
 
-const Rockets = () => {
-  const myState2 = useSelector((state) => state);
-  console.log(myState2);
-  return (
-    <div>Rockets page</div>
-  );
-};
+const Rockets = () => (
+  <div>
+    <RocketsList />
+  </div>
+);
 
 export default Rockets;
