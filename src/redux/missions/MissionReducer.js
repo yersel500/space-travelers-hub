@@ -5,14 +5,14 @@ const FETCH_MISSION = 'mission/missionReducer/FETCH_MISSION';
 
 const missionUrl = 'https://api.spacexdata.com/v3/missions';
 
-export const FetchData = () => async () => {
+export const FetchData = () => async (dispatch) => {
   const response = await fetch(missionUrl);
   const data = await response.json();
   console.log(data);
-  // dispatch({
-  //   type: FETCH_MISSION,
-  //   payload: mymission
-  // });
+  dispatch({
+    type: FETCH_MISSION,
+    payload: data,
+  });
 };
 
 export const missionReducer = (state = [], action = {}) => {
@@ -26,6 +26,8 @@ export const missionReducer = (state = [], action = {}) => {
     //   });
     //   return newState;
     case FETCH_MISSION:
-      return [...state];
+      return [...state, ...action.payload];
+    default:
+      return state;
   }
 };
