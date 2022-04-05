@@ -20,18 +20,15 @@ export const rocketsData = (payload) => ({
 
 export const getRockets = async () => {
   const response = await fetch(rocketsURL);
-  if (response.ok) {
-    const data = await response.json();
-    const rockets = [];
-    data.forEach((rocket) => {
-      rockets.push({
-        id: rocket.id,
-        name: rocket.rocket_name,
-        image: rocket.flickr_images[0],
-        description: rocket.description,
-      });
+  const data = await response.json();
+  const rockets = [];
+  data.forEach((rocket) => {
+    rockets.push({
+      id: rocket.id,
+      name: rocket.rocket_name,
+      image: rocket.flickr_images[0],
+      description: rocket.description,
     });
-    return rockets;
-  }
-  return [];
+  });
+  return rockets;
 };
