@@ -12,19 +12,25 @@ const MissionItem = ({
   };
   return (
     <tr>
-      <td>{mission}</td>
+      <td className="mission-name">{mission}</td>
       <td>{description}</td>
-      <td>
-        { reserved ? (<span> Active Member</span>) : (<span> NOT A MEMBER</span>)}
+      <td className="member-mission">
+        { reserved ? (<span className="active-member"> Active Member</span>) : (<span className="not-member"> NOT A MEMBER</span>)}
       </td>
-      <td>
+      <td className="join-mission">
         <button
           type="button"
           onClick={handleJoin}
           className={id}
           style={{
             color: reserved ? 'red' : 'black',
-            border: reserved ? '1px solid red' : '1px solid black',
+            border: reserved ? '2px solid red' : '2px solid black',
+            borderRadius: '0.2rem',
+            fontWeight: '600',
+            background: 'transparent',
+            padding: '0.15rem',
+            display: 'block',
+            margin: 'auto',
           }}
         >
           { reserved ? 'Leave Mission' : 'Join Mission'}
