@@ -5,7 +5,7 @@ const MissionList = () => {
   const myState = useSelector((state) => state.missionReducer);
 
   return (
-    <table>
+    <table className="missions-container">
       <thead>
         <tr>
           <th>Mission</th>

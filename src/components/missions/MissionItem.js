@@ -12,7 +12,7 @@ const MissionItem = ({
   };
   return (
     <tr>
-      <td>{mission}</td>
+      <td className="mission-name">{mission}</td>
       <td>{description}</td>
       <td>
         { reserved ? (<span> Active Member</span>) : (<span> NOT A MEMBER</span>)}
