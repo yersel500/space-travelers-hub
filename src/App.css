@@ -70,3 +70,8 @@ hr {
   border-radius: 0.5rem;
   cursor: pointer;
 }
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}

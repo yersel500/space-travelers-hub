@@ -14,22 +14,25 @@ const MissionList = () => {
 
   return (
     <table>
-      <tr>
-        <th>Mission</th>
-        <th>Description</th>
-        <th>Status</th>
-        <th>Join</th>
-      </tr>
-      {myState.map((element) => (
-        <MissionItem
-          key={element.MissionId}
-          id={element.MissionId}
-          mission={element.MissionName}
-          description={element.description}
-          reserved={element.reserved}
-        />
-      ))}
-      <MissionItem />
+      <thead>
+        <tr>
+          <th>Mission</th>
+          <th>Description</th>
+          <th>Status</th>
+          <th>Join</th>
+        </tr>
+      </thead>
+      <tbody>
+        {myState.map((element) => (
+          <MissionItem
+            key={element.MissionId}
+            id={element.MissionId}
+            mission={element.MissionName}
+            description={element.description}
+            reserved={element.reserved}
+          />
+        ))}
+      </tbody>
     </table>
   );
 };
