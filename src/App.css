@@ -61,14 +61,44 @@ hr {
   font-family: sans-serif;
 }
 
-.rocket-btn {
+.rocket-reserve-btn {
   margin-left: 1rem;
   background-color: #0290ff;
   color: #fff;
+  box-shadow: 1px 1px 1px #000;
   border: none;
   padding: 1rem;
   border-radius: 0.5rem;
   cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.rocket-reserve-btn:hover {
+  background-color: #0150ff;
+}
+
+.rocket-cancel-btn {
+  margin-left: 1rem;
+  background-color: #fff;
+  color: gray;
+  border: 1px solid #000;
+  box-shadow: 1px 1px 1px;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.rocket-cancel-btn:hover {
+  background-color: #ddd;
+}
+
+.rocket-span {
+  background-color: #00cbb9;
+  color: #fff;
+  border-radius: 6px;
+  padding: 0.1rem 0.5rem;
+  margin-right: 0.5rem;
 }
 
 table,
