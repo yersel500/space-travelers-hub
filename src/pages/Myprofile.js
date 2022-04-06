@@ -1,5 +1,9 @@
 const Myprofile = () => (
-  <div>My profile page</div>
+  <div>
+    <h2>
+      My Missions
+    </h2>
+  </div>
 );
 
 export default Myprofile;
