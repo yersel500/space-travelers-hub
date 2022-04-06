@@ -1,16 +1,8 @@
-// import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
-// import { FetchData } from '../../redux/missions/MissionReducer';
 import MissionItem from './MissionItem';
 
 const MissionList = () => {
-  // const dispatch = useDispatch();
   const myState = useSelector((state) => state.missionReducer);
-  // useEffect(() => {
-  //   if (myState.lenght === 0) {
-  //     dispatch(FetchData());
-  //   }
-  // }, []);
 
   return (
     <table>

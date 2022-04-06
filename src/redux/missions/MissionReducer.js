@@ -1,6 +1,5 @@
 // Actions
 const JOIN = 'missions/missionReducer/JOIN';
-// const LEAVE = 'missions/missionReducer/LEAVE';
 const FETCH_MISSION = 'mission/missionReducer/FETCH_MISSION';
 
 const missionUrl = 'https://api.spacexdata.com/v3/missions';
@@ -8,7 +7,6 @@ const missionUrl = 'https://api.spacexdata.com/v3/missions';
 export const FetchData = () => async (dispatch) => {
   const response = await fetch(missionUrl);
   const data = await response.json();
-  console.log(data);
   const data2 = [];
   data.forEach((element) => {
     data2.push({
