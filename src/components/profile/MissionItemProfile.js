@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 
 const MissionItemProfile = ({ name }) => (
-  <div>
-    <div>{name}</div>
+  <div className="rockets-li">
+    {name}
   </div>
 );
 

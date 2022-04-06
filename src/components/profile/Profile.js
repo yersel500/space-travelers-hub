@@ -9,13 +9,16 @@ const Profile = () => {
 
   return (
     <div className="profile-container">
-      <div>
-        {ReservedMissions.map((element) => (
-          <MissionItemProfile
-            key={element.MissionId}
-            name={element.MissionName}
-          />
-        ))}
+      <div className="rockets-profile-container">
+        <h2 className="rockets-profile-title">My Missions</h2>
+        <div className="rockets-ul">
+          {ReservedMissions.map((element) => (
+            <MissionItemProfile
+              key={element.MissionId}
+              name={element.MissionName}
+            />
+          ))}
+        </div>
       </div>
       <div className="rockets-profile-container">
         <h2 className="rockets-profile-title">My Rockets</h2>
