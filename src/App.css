@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 nav {
@@ -30,6 +31,7 @@ nav {
 
 .list-container li a {
   text-decoration: none;
+  color: #0290ff;
 }
 
 .rockets-nav {
@@ -58,7 +60,6 @@ hr {
 .rocket-name,
 .rocket-description {
   margin: 0 0 1rem 1rem;
-  font-family: sans-serif;
 }
 
 .rocket-reserve-btn {
@@ -106,4 +107,33 @@ th,
 td {
   border: 1px solid black;
   border-collapse: collapse;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.rockets-profile-container {
+  width: 40%;
+  margin: 2rem;
+}
+
+.rockets-profile-title {
+  padding: 1rem;
+}
+
+.rockets-ul {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  list-style: none;
+}
+
+.rockets-li {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.rockets-li:last-child {
+  border: none;
 }
