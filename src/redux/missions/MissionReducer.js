@@ -33,7 +33,7 @@ export const missionReducer = (state = [], action = {}) => {
   switch (action.type) {
     case JOIN: {
       const newState = state.map((element) => {
-        if (element.mission_id !== action.payload) {
+        if (element.MissionId !== action.payload) {
           return element;
         }
         if (element.reserved === true) {
@@ -44,7 +44,7 @@ export const missionReducer = (state = [], action = {}) => {
       return newState;
     }
     case FETCH_MISSION:
-      return [...state, ...action.payload];
+      return action.payload;
     default:
       return state;
   }
