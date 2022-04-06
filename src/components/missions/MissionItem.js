@@ -25,6 +25,10 @@ const MissionItem = ({
           type="button"
           onClick={handleJoin}
           className={id}
+          style={{
+            color: reserved ? 'red' : 'black',
+            border: reserved ? '1px solid red' : '1px solid black',
+          }}
         >
           { reserved ? 'Leave Mission' : 'Join Mission'}
         </button>
