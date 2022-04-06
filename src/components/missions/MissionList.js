@@ -10,7 +10,7 @@ const MissionList = () => {
     dispatch(FetchData());
   }, []);
 
-  const myState = useSelector((state) => state);
+  const myState = useSelector((state) => state.missionReducer);
   console.log(myState);
   return (
     <table>

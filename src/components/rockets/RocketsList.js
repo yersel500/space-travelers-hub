@@ -26,6 +26,7 @@ const Rockets = () => {
           key={rocket.id}
           id={rocket.id}
           image={rocket.image}
+          reserved={rocket.reserved}
         />
       ))}
     </div>
