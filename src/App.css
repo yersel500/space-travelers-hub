@@ -127,3 +127,23 @@ hr {
 .missions-container th {
   background-color: #fff;
 }
+
+.active-member {
+  background-color: rgb(27, 162, 151);
+  color: #fff;
+  padding: 0.15rem;
+  border-radius: 0.2rem;
+  display: block;
+  margin: auto;
+  width: 65%;
+}
+
+.not-member {
+  background-color: rgb(102, 104, 104);
+  color: #fff;
+  padding: 0.15rem;
+  border-radius: 0.2rem;
+  display: block;
+  margin: auto;
+  width: 70%;
+}

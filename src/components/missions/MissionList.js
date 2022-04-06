@@ -8,9 +8,29 @@ const MissionList = () => {
     <table className="missions-container">
       <thead>
         <tr>
-          <th>Mission</th>
-          <th>Description</th>
-          <th>Status</th>
+          <th
+            style={
+              { width: '10%' }
+            }
+          >
+            Mission
+          </th>
+          <th
+            style={
+              { width: '60%' }
+            }
+          >
+            Description
+          </th>
+          <th
+            style={
+              {
+                width: '15%',
+              }
+            }
+          >
+            Status
+          </th>
           <th>Join</th>
         </tr>
       </thead>
