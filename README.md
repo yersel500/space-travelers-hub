@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Space Travelers Hub
 
-## Available Scripts
+"Space Travelers Hub" is a website that work with real live data from the SpaceX API. The users can book rockets and join selected space missions.
 
-In the project directory, you can run:
+## Built With
+- React
+- Redux
+- Router
+- SpaceX API
 
-### `npm start`
+## Live Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### [Netlify - Space Treavelers Hub](https://loquacious-axolotl-f182b5.netlify.app/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+Clone the repository and setup the linter
+
+## API
+
+The current project is using the next API's:
+
+- Rockets: `https://api.spacexdata.com/v3/rockets`
+- Missions: `https://api.spacexdata.com/v3/missions`
+
+## Prerequisites
+
+- npm ( Node Package Manager )
+- git and Github Account
+
+### Setup
+
+To get a local copy up and running follow these simple example steps.
+
+- Open terminal
+- Change the directory you want put the repo
+- Then run
+  i. Run git clone
+  ii. cd repo-name/
+  iii. npm install
+
+#### `npm test`
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+#### `npm start`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Launch the app in the browser using `http://localhost:3000/`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Install Linters
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Stylelint** linter
 
-### `npm run eject`
+  `npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **ESLint** linter
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  `npm install --save-dev eslint@7.x eslint-config-airbnb@18.x eslint-plugin-import@2.x eslint-plugin-jsx-a11y@6.x eslint-plugin-react@7.x eslint-plugin-react-hooks@4.x @babel/eslint-parser@7.x @babel/core@7.x  @babel/plugin-syntax-jsx@7.x  @babel/preset-react@7.x @babel/preset-react@7.x`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Run tests
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Stylelint** linter
+  - `npx stylelint "**/*.{css,scss}"` on the root of your directory of your project.
+- **ESLint** linter
+  - `npx eslint .` on the root of your directory of your project.
 
-## Learn More
+## Authors
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+👤 **Lucas Bonnefon**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- GitHub: [@ryxtor](https://github.com/ryxtor)
+- Twitter: [@ryxtor](https://twitter.com/ryxtor)
+- LinkedIn: [Lucas Bonnefon](https://www.linkedin.com/in/LucasBonnefon/)
 
-### Code Splitting
+👤 **Yersel Hurtado**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- GitHub: [@yersel500](https://github.com/yersel500/)
+- Twitter: [@YerselHurtado](https://twitter.com/YerselHurtado)
+- LinkedIn: [Yersel Hurtado](https://www.linkedin.com/in/yersel-hurtado/)
 
-### Analyzing the Bundle Size
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Contributions, issues, and feature requests are welcome!
 
-### Making a Progressive Web App
+## Show your support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Give a ⭐️ if you like this project!
 
-### Advanced Configuration
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- A big thank you to Microverse and SpaceX Travel, for providing me the knowledge and tools (API) to finish this project.
+- An even bigger thank you to all my coding partners who helped me get here.
 
-### Deployment
+## 📝 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](https://github.com/microverseinc/readme-template/blob/master/MIT.md) licensed.
